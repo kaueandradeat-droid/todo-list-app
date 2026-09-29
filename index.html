@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minha lista</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section id="welcome" class="screen welcome-screen">
+      <div class="welcome-card">
+        <div class="logo">✓</div>
+        <p class="eyebrow">Organize seu dia</p>
+        <h1>Minha lista</h1>
+        <p class="subtitle">Anote suas tarefas de forma simples e rápida.</p>
+        <button id="enter-button" class="primary-button">Entrar</button>
+      </div>
+    </section>
+
+    <section id="todo" class="screen todo-screen hidden">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">Sua rotina</p>
+          <h1>Minha lista</h1>
+        </div>
+        <button id="clear-button" class="text-button" type="button">Limpar</button>
+      </header>
+
+      <form id="task-form" class="task-form">
+        <input id="task-input" type="text" placeholder="Adicionar uma tarefa..." autocomplete="off" required />
+        <button class="primary-button add-button" type="submit">Adicionar</button>
+      </form>
+
+      <p id="empty-state" class="empty-state">Você ainda não tem tarefas.</p>
+      <ul id="task-list" class="task-list"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
